@@ -1780,6 +1780,12 @@
           "label": "Enable filtering",
           "info": "Customize filters with the Search & Discovery app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/filters)"
         },
+        "heading_1": {
+          "content": "Border settings"
+        },
+        "heading_2": {
+          "content": "Grid settings"
+        },
         "border_color": {
           "label": "Border color"
         },
