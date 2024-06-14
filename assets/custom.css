@@ -1,3 +1,10 @@
 .price .price-item {
     color: var(--color-price, var(--color-foreground));
 }
+
+.plp-product-grid li {
+    padding: 1rem;
+    border-color: var(--grid-border-color, var(--color-foreground));
+    border-width: var(--grid-border-width);
+    border-style: var(--grid-border-style);
+}

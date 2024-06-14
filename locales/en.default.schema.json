@@ -1780,6 +1780,36 @@
           "label": "Enable filtering",
           "info": "Customize filters with the Search & Discovery app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/filters)"
         },
+        "border_color": {
+          "label": "Border color"
+        },
+        "border_width": {
+          "label": "Border width",
+          "options__1": {
+            "label": "1px"
+          },
+          "options__2": {
+            "label": "2px"
+          },
+          "options__3": {
+            "label": "4px"
+          }
+        },
+        "border_style": {
+          "label": "Border style",
+          "options__1": {
+            "label": "None"
+          },
+          "options__2": {
+            "label": "Solid"
+          },
+          "options__3": {
+            "label": "Dashed"
+          },
+          "options__4": {
+            "label": "Dotted"
+          }
+        },
         "filter_type": {
           "label": "Desktop filter layout",
           "options__1": {
@@ -1964,8 +1994,7 @@
           "name": "Price",
           "settings": {
             "color": {
-              "label": "Color",
-              "info": "Silver Ponies - Test Subtask 2"
+              "label": "Color"
             }
           }
         },
