@@ -1961,7 +1961,13 @@
           "name": "Title"
         },
         "price": {
-          "name": "Price"
+          "name": "Price",
+          "settings": {
+            "color": {
+              "label": "Color",
+              "info": "Silver Ponies - Test Subtask 2"
+            }
+          }
         },
         "inventory": {
           "name": "Inventory status",

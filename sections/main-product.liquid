@@ -106,7 +106,8 @@
                     product: product,
                     use_variant: true,
                     show_badges: true,
-                    price_class: 'price--large'
+                    price_class: 'price--large',
+                    price_color: block.settings.color
                   -%}
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
@@ -794,7 +795,15 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "color",
+          "label": "t:sections.main-product.blocks.price.settings.color.label",
+          "info": "t:sections.main-product.blocks.price.settings.color.info"
+        }
+      ]
     },
     {
       "type": "sku",
