@@ -42,6 +42,19 @@
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
+            {%- when 'clear' -%}
+              <div class="cart-clear-btn">
+                <cart-remove-all-button
+                  data-source="cart-remove"
+                  data-container="cart-items"
+                >
+                  <button name="removeAll" type="button" class="button button--secondary">
+                    <span>Remove All</span>
+                    {%- render 'loading-spinner' -%}
+                  </button>
+                  <span role="alert" class="error-message"></span>
+                </cart-remove-all-button>
+              </div>
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div>
@@ -146,6 +159,11 @@
     {
       "type": "buttons",
       "name": "t:sections.main-cart-footer.blocks.buttons.name",
+      "limit": 1
+    },
+    {
+      "type": "clear",
+      "name": "t:sections.main-cart-footer.blocks.clear.name",
       "limit": 1
     },
     {

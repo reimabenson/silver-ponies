@@ -26,6 +26,7 @@ class CartItems extends HTMLElement {
   }
 
   cartUpdateUnsubscriber = undefined;
+  cartClearUnsubscriber = undefined;
 
   connectedCallback() {
     this.cartUpdateUnsubscriber = subscribe(PUB_SUB_EVENTS.cartUpdate, (event) => {
@@ -34,12 +35,31 @@ class CartItems extends HTMLElement {
       }
       this.onCartUpdate();
     });
+
+    this.cartClearUnsubscriber = subscribe(PUB_SUB_EVENTS.cartClear, (event) => {
+      this.onCartClear(event.cartData);
+    });
   }
 
   disconnectedCallback() {
     if (this.cartUpdateUnsubscriber) {
       this.cartUpdateUnsubscriber();
     }
+
+    if (this.cartClearUnsubscriber) {
+      this.cartClearUnsubscriber();
+    }
+  }
+
+  onCartClear(cartData) {
+    this.getSectionsToRender().forEach((section) => {
+      const elementToReplace =
+        document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
+      elementToReplace.innerHTML = this.getSectionInnerHTML(
+        cartData.sections[section.section],
+        section.selector
+      );
+    });
   }
 
   onChange(event) {

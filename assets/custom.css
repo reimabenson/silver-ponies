@@ -8,3 +8,9 @@
     border-width: var(--grid-border-width);
     border-style: var(--grid-border-style);
 }
+
+cart-remove-all-button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}

@@ -1746,6 +1746,9 @@
         },
         "buttons": {
           "name": "Checkout button"
+        },
+        "clear": {
+          "name": "Clear cart button"
         }
       }
     },

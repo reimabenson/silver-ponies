@@ -469,6 +469,19 @@
           </details>
         {%- endif -%}
 
+        <div class="cart-clear-btn">
+          <cart-remove-all-button
+            data-source="cart-remove"
+            data-container="cart-drawer-items"
+          >
+            <button name="removeAll" type="button" class="button button--secondary">
+              <span>Remove All</span>
+              {%- render 'loading-spinner' -%}
+            </button>
+            <span role="alert" class="error-message"></span>
+          </cart-remove-all-button>
+        </div>
+
         <!-- Start blocks -->
         <!-- Subtotals -->
 
@@ -520,7 +533,7 @@
           >
             {{ 'sections.cart.checkout' | t }}
           </button>
-        </div>
+        </div>        
       </div>
     </div>
   </div>
