@@ -56,7 +56,7 @@
           "settings": {
             "heading": "Product Extra Info",
             "icon": "none",
-            "content": "<p>{{ product.vendor }}<\/p>"
+            "content": "<p>Vendor Name (from Metafield) : {{ product.vendor }} <\/p>"
           }
         }
       },
