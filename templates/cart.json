@@ -11,6 +11,11 @@
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
+        "clear_KaQxPC": {
+          "type": "clear",
+          "settings": {
+          }
+        },
         "subtotal": {
           "type": "subtotal",
           "settings": {
@@ -23,6 +28,7 @@
         }
       },
       "block_order": [
+        "clear_KaQxPC",
         "subtotal",
         "buttons"
       ],

@@ -18,6 +18,7 @@
         "price": {
           "type": "price",
           "settings": {
+            "color": "#E13419"
           }
         },
         "variant_picker": {
@@ -49,6 +50,14 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "product_extra_info_MQFwjN": {
+          "type": "product_extra_info",
+          "settings": {
+            "heading": "Product Extra Info",
+            "icon": "none",
+            "content": "<p>{{ product.vendor }}<\/p>"
+          }
         }
       },
       "block_order": [
@@ -59,7 +68,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "product_extra_info_MQFwjN"
       ],
       "settings": {
         "enable_sticky_info": true,
